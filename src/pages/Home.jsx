@@ -3,6 +3,7 @@ import Sort from "../components/Sort";
 import Pizza from "../components/Pizza";
 import Skeleton from "../components/Pizza/Skeleton";
 import Categories from "../components/Categories";
+import pizzzas from '../assets/pizzas.json'
 
 const Home = () => {
   const [pizzas, setPizzas] = useState([]);
@@ -32,7 +33,7 @@ const Home = () => {
       <div className="content__items">
         {loading
           ? [...new Array(6)].map((_, i) => <Skeleton key={i} />)
-          : pizzas && pizzas.map((e) => <Pizza key={e.id} {...e} />)}
+          : pizzzas && pizzzas.map((e) => <Pizza key={e.id} {...e} />)}
       </div>
     </>
   );
