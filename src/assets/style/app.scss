@@ -34,13 +34,25 @@ body {
     @media (max-width: 1400px) {
       grid-template-columns: repeat(3, 1fr);
     }
+
+    @media (max-width: 1060px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 750px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1270px) {
+      flex-direction: column;
+    }
   }
+  
 }
 
 .container {
@@ -63,7 +75,9 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-
+  .content__items{
+      display: block;
+  }
   .content__title {
     display: flex;
     align-items: center;

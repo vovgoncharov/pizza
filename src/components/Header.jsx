@@ -6,10 +6,10 @@ const Header = () => {
       <div className="container">
         <Link to={'/'} className="header__logo">
           <img width="38" src={logo} alt="Pizza logo" />
-          <div>
+          <aside className="header-text-block">
             <h1>React Pizza</h1>
             <p>самая вкусная пицца во вселенной</p>
-          </div>
+          </aside>
         </Link>
         <div className="header__cart">
           <Link to={"/cart"} className="button button--cart">
